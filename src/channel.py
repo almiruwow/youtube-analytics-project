@@ -17,6 +17,3 @@ class Channel:
         data_chanel = youtube.channels().list(id=self.channel_id, part='snippet, statistics').execute()
         print(json.dumps(data_chanel, indent=2, ensure_ascii=False))
 
-
-yt = Channel('UCwHL6WHUarjGfUM_586me8w')
-yt.print_info()
